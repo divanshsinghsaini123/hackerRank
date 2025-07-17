@@ -65,7 +65,7 @@ public class HomeController : Controller
         var claimsIdentity = new ClaimsIdentity(claims, "CustomCookieAuth");
         var authProperties = new AuthenticationProperties
         {
-            IsPersistent = true, // Remember me
+            IsPersistent = true, 
             ExpiresUtc = DateTimeOffset.UtcNow.AddHours(24)
         };
 
