@@ -51,7 +51,7 @@ public class HomeController : Controller
 
         if (user == null || !BCrypt.Net.BCrypt.Verify(temp.PasswordHash, user.PasswordHash))
         {
-            TempData["Error"] = "Invalid username or password";
+            //TempData["Error"] = "Invalid username or password";
             return RedirectToAction("Login");
         }
 
